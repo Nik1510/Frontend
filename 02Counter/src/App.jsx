@@ -4,7 +4,23 @@ import './App.css'
 
 function App() {
 
+
   let [counter,setCounter] = useState(15)
+
+  const batchUpdate =()=>{
+    // here you take pervious state 
+    setCounter(counter=>counter+1)
+    setCounter(counter=>counter+1)
+    setCounter(counter=>counter+1)
+    setCounter(counter=>counter+1)
+  }
+   const batchRemove =()=>{
+    // here you take pervious state 
+    setCounter(counter=>counter-1)
+    setCounter(counter=>counter-1)
+    setCounter(counter=>counter-1)
+    setCounter(counter=>counter-1)
+  }
 
   // let counter =5;
 
@@ -34,8 +50,10 @@ const removeValue = ()=>{
       <h1>React With Vite </h1>
       <h2>Counter Value : {counter} </h2>
       <button onClick={addValue} disabled={counter>=20}>Add value {counter} </button>
+      <button onClick={batchUpdate} disabled={counter>=16}>Batch add value {counter} </button>
       <br />
       <button  onClick={removeValue}disabled={counter<=0}>Remove value {counter}</button>
+      <button  onClick={batchRemove}disabled={counter<=4}>BatchRemove value {counter}</button>
       <footer> footer value : {counter}</footer>
     </>
   )
