@@ -1,0 +1,11 @@
+.currency-select__control {
+  background-color: #f3f4f6; /* Tailwind bg-gray-100 */
+  border: none;
+  min-height: 36px;
+}
+.currency-select__menu {
+  z-index: 10;
+}
+.currency-select__option--is-focused {
+  background-color: #e0f2fe; /* Tailwind blue-100 */
+}
