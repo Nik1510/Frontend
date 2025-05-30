@@ -66,8 +66,8 @@ function InputBox() {
           <p>Temperature: {weatherData.main.temp}°C</p>
           <p>Condition: {weatherData.weather[0].description}</p>
           <p>Wind Speed : {weatherData.wind.speed} km/h</p>
-            <p>🌅 Sunrise: {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString()}</p>
-            <p>🌇 Sunset: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString()}</p>
+            <p>🌅 Sunrise: {new Date(weatherData.sys.sunrise * 1000).toUTCString()}</p>
+            <p>🌇 Sunset: {new Date(weatherData.sys.sunset * 1000).toUTCString()}</p>
         </div>
       )}
     </div>

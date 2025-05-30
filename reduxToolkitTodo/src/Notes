@@ -1,0 +1,32 @@
+first we have to create store from configureStore
+
+next step:-  we create our own reducers
+
+step 3: - create a folder and inside it create another folder name the folder with its use case and include slice in it , so that everyone know you have implemented redux 
+
+step 4:-  import createSlice 
+        and provide inital State
+
+step 5:- export todoSlice as createSlice({})=> takes an object
+
+
+step 6:- in createSlice object we provide information of the object and information of reducers
+
+step 7:- reducers take property and function 
+
+step 8:- syntax _:- whenever in introduce reducers we   write    function defination ,
+
+in function you will get two state and actions 
+
+state will give you inital state,
+action where u receive any value 
+
+step 9: - export all the reducers 
+
+step 10 : - the store needs the information about all the reducers 
+
+step 11;- wire up to redux can be done with dispatch
+
+dispatcher use reducers to make changes in store 
+
+step 12:- useSelector :- 
