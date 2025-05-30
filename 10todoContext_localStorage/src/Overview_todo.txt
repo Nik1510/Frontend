@@ -1,0 +1,15 @@
+by default all todos are array
+every todos have a 
+unique id 
+title
+completed -> false, true
+
+functionality :- 
+add Todo 
+edit Todo
+delete todo 
+toggle todo -> mark it completed or inComplete
+
+to access functionality we will use id to access
+
+we will pass every thing in todos
