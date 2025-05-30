@@ -5,7 +5,7 @@ function InputBox() {
 
     const [city,setCity] =useState('');
     const [serachCity,setSearchCity] = useState('');
-    const weatherData = useWeatherInfo(serachCity);
+    const {weatherData,error} = useWeatherInfo(serachCity);
 
     const handleSubmit =(e)=>{
         e.preventDefault();
@@ -50,6 +50,15 @@ function InputBox() {
           Search
         </button>
       </form>
+
+      {/* Error Message */}
+      {
+        error &&(
+        <div className="mt-4 text-red-500 font-medium">
+          ❌ {error}
+        </div>
+      )
+      }
 
       {weatherData && (
         <div className="mt-4 text-white">
