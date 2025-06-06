@@ -57,4 +57,9 @@ export class AuthService{
 const authService = new AuthService(); // making an object
 // so that anyone can access it with "." eg:- authService.Your_need
 
-export default AuthService;
+//   Mistake I made 
+
+// here donot write AppService as it is not the object the object
+// is authService 
+
+export default authService;
